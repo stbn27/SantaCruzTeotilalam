@@ -1,3 +1,4 @@
 demo_index.html
 plantillas.html
-.vscode
+.vscode/**
+js/plantillas.js

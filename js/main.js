@@ -2,7 +2,9 @@ const btnMenu = document.getElementById('btn-menu');
 const contenedorLinksMobile = document.querySelector('.links');
 const links = document.querySelector('.contendor_links');
 const contenedor_links = document.querySelector('.nav_links');
+var year = new Date().getFullYear();
 
+document.getElementById('span_annoActual').textContent =  String.fromCharCode(169) + " " + year + " | STBN";
 
 btnMenu.addEventListener('click', () => {
     contenedorLinksMobile.classList.toggle('mostrar_menu');
