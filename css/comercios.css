@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;500;700;900&display=swap');
+
+:root {
+    --apple-50: #ebfde8;
+    --apple-100: #d2facc;
+    --apple-200: #acf5a3;
+    --apple-300: #76ed68;
+    --apple-400: #47df3a;
+    --apple-500: #28c31d;
+    --apple-600: #1db215;
+    --apple-700: #167713;
+    --apple-800: #186015;
+    --apple-900: #165016;
+    --apple-950: #072c08;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+.hero_comercio {
+    margin-top: 70px;
+    width: 100%;
+    height: calc(100vh - 300px);
+    background: linear-gradient(156deg, rgba(2, 245, 249, 0.3), rgba(240, 239, 239, 0.1)), url('/img/img6.JPG');
+
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+
+    & h1 {
+        color: var(--apple-950);
+        text-align: center;
+        text-shadow: 5px 5px 10px rgba(255, 255, 255, .9);
+    }
+
+    & h4 {
+        z-index: 100;
+        font-weight: 300;
+        color: #2a2929;
+        font-size: .7rem;
+    }
+}
+
+.wave_comercio {
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    bottom: -2px;
+    right: 0;
+    background-image: url('/img/wave4.svg');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.mensaje_comercio {
+    width: 95%;
+    margin: 0 auto;
+    border: 1px solid var(--apple-600);
+    padding: .6rem;
+    border-radius: 16px;
+    background-color: var(--apple-100);
+    text-align: center;
+    font-size: .8rem;
+}
+
+.comercios_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(1fr, 500px));
+}
+
+.negocio {
+    width: 90%;
+    margin: 1rem auto;
+    padding: .6rem;
+    border-radius: 8px;
+    border: 2px solid var(--apple-600);
+    /* box-shadow: 5px 5px 3px rgba(90, 156, 67, .6), -3px -2px 5px rgba(67, 130, 45, .5); */
+
+    & .negocio_titulo {
+        color: var(--apple-700);
+        text-align: center;
+        padding: .6rem 0;
+    }
+
+    & p {
+        color: var(--apple-800);
+        font-size: 1rem;
+    }
+
+    & ul {
+        padding-left: 1rem;
+        color: var(--apple-900);
+        font-size: .9rem;
+    }
+}
+
+.negocio_contacto {
+    padding: .6rem .4rem;
+    color: var(--apple-900);
+
+    & p {
+        display: inline-block;
+        width: 90%;
+    }
+
+    & span {
+        color: var(--apple-700);
+        display: inline-block;
+        padding-left: 1rem;
+    }
+}
+
+.contacto_directo {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+    justify-content: center;
+
+    & a {
+        display: inline-block;
+        border: 1px solid var(--apple-700);
+        border-radius: 10px;
+        padding: .4rem;
+        min-width: 180px;
+        text-align: center;
+        text-decoration: none;
+        color: var(--apple-50);
+        font-weight: 700;
+    }
+}
+
+.section_promocion {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 1.4rem;
+    border: 1px dotted var(--apple-600);
+    background-color: var(--apple-100);
+    padding: 1rem;
+    border-radius: 16px;
+
+    & h2 {
+        text-align: center;
+        font-weight: 700;
+        font-size: 1rem;
+        color: var(--apple-900);
+    }
+}
+
+.container_contacto {
+    width: 95%;
+    margin: 0 auto;
+    padding: 0.5rem 0;
+    text-align: center;
+
+    & span {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        color: var(--apple-700);
+        font-size: 0.8rem;
+    }
+
+    & a {
+        display: inline-block;
+        width: 180px;
+        max-width: 200px;
+        border: 1px solid var(--apple-300);
+        padding: .5rem 0;
+        margin-top: 10px;
+        border-radius: 16px;
+        text-align: center;
+        text-decoration: none;
+        color: var(--apple-800);
+        background-color: var(--apple-50);
+
+        transition: border-color .3s ease,
+            box-shadow .3s ease;
+    }
+
+    & a:hover {
+        background-color: var(--apple-500);
+        border-color: var(--apple-600);
+        box-shadow: 0 0 15px rgba(50, 150, 20, 0.6);
+    }
+}
+
+
+@media (min-width: 600px) {
+
+    .hero_comercio {
+
+        margin-top: 30px;
+
+         & h1 {
+            font-weight: 900;
+            font-size: 2.5rem;
+         }
+
+         & h4 {
+            font-size: 1rem;
+         }
+    }
+
+    .wave_comercio {
+        height: 200px;
+        background-position-y: 80px;
+    }
+
+    .negocio ul{
+        padding: .7rem 2.5rem;
+    }
+
+}
+
+@media (min-width: 830px) {
+
+    .comercios_grid {
+        grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    }
+
+    .negocio {
+        min-width: 350px;
+    }
+
+}
+
+@media (min-width: 1100px) {
+    .wave_comercio {
+        height: 200px;
+        background-position-y: 60px;
+    }
+}

@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;500;700;900&display=swap');
+
+:root {
+    --apple-50: #ebfde8;
+    --apple-100: #d2facc;
+    --apple-200: #acf5a3;
+    --apple-300: #76ed68;
+    --apple-400: #47df3a;
+    --apple-500: #28c31d;
+    --apple-600: #1db215;
+    --apple-700: #167713;
+    --apple-800: #186015;
+    --apple-900: #165016;
+    --apple-950: #072c08;
+}
+
+.hero_acerca {
+    margin-top: 70px;
+    height: 300px;
+    background: linear-gradient(160deg, #134309,#28692e, #1dcfdf);
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    color: var(--apple-50);
+    text-align: center;
+
+    & h1 {
+        font-weight: 900;
+        text-shadow: 0 0 20px var(--apple-300);
+        margin-bottom: 1rem;
+    }
+
+    & span {
+        color: var(--apple-100);
+    }
+}
+
+.wave_acerca {
+    height: 100px;
+    width: 100%;
+
+    position: absolute;
+    bottom: -2px;
+    right: 0;
+
+    background-image: url('/img/wave3.svg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+
+}
+
+.main_acerca {
+    width: 100%;
+    /* background: #c6c6c6; */
+    background-color: #FFF;
+    margin: 0 auto;
+    padding-bottom: 1rem;
+
+}
+
+.section_autores {
+    padding: 0 1.2rem;
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+}
+
+.section_autores .autor {
+    width: 100%;
+
+    & h2 {
+        width: 100%;
+        font-size: 1.3rem;
+        text-align: center;
+        color: var(--apple-950);
+        position: relative;
+    }
+
+    & h2::before {
+        content: 'Información recabada por(Autor):';
+        font-size: 0.7rem;
+        color: var(--apple-900);
+        font-weight: 300;
+        position: absolute;
+        top: -0.7rem;
+    }
+}
+
+.section_autores .coautores{
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    & .entrevistado {
+        width: 40%;
+        min-width: 250px;
+    }
+
+    & .entrevistado h3 {
+        color: var(--apple-700);
+        font-weight: 500;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    & .entrevistado span {
+        display: inline-block;
+        width: 100%;
+        color: var(--apple-900);
+        font-size: 0.6rem;
+        text-align: center;
+    }
+}
+
+.section_promocion {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 1.4rem;
+    border: 1px dotted var(--apple-600);
+    background-color: var(--apple-100);
+    padding: 1rem;
+    border-radius: 16px;
+
+    & h2 {
+        text-align: center;
+        font-weight: 700;
+        font-size: 1rem;
+        color: var(--apple-900);
+    }
+}
+
+.container_contacto {
+    width: 95%;
+    margin: 0 auto;
+    padding: 0.5rem 0;
+    text-align: center;
+
+    & span {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        color: var(--apple-700);
+        font-size: 0.8rem;
+    }
+
+    & a {
+        display: inline-block;
+        width: 180px;
+        max-width: 200px;
+        border: 1px solid var(--apple-300);
+        padding: .5rem 0;
+        margin-top: 10px;
+        border-radius: 16px;
+        text-align: center;
+        text-decoration: none;
+        color: var(--apple-800);
+        background-color: var(--apple-50);
+
+        transition: border-color .3s ease,
+            box-shadow .3s ease;
+    }
+
+    & a:hover {
+        background-color: var(--apple-500);
+        border-color: var(--apple-600);
+        box-shadow: 0 0 15px rgba(50, 150, 20, 0.6);
+    }
+}
+
+@media (min-width: 600px) {
+    .wave_acerca {
+        height: 250px;
+        background-position-y: 30px;
+    }
+}
